@@ -1,14 +1,18 @@
-# Variables
+# চলক [Variables]
 
-Most of the time, a JavaScript application needs to work with information. Here are two examples:
-1. An online shop -- the information might include goods being sold and a shopping cart.
-2. A chat application -- the information might include users, messages, and much more.
+অধিকাংশ সময়, একটি জাভাস্ক্রিপ্ট অ্যাপ্লিকেশনে উপাত্ত (Data) নিয়ে কাজ করার প্রয়োজন হয় । এখানে ২টি উদাহরন দেয়া হলঃ 
 
-Variables are used to store this information.
+​	১। একটি অনলাইন শপ -- বিক্রিত পণ্য এবং একটি শপিং কার্টের উপাত্তগুলো থাকতে পারে । 
 
-## A variable
+​	২। একটি চ্যাট অ্যাপ্লিকেশন -- ব্যবহারকারীদের (Users), বার্তাসমূহের (Messages), এবং আরো অনেক কিছুর উপাত্ত থাকতে পারে ।
 
-A [variable](https://en.wikipedia.org/wiki/Variable_(computer_science)) is a "named storage" for data. We can use variables to store goodies, visitors, and other data.
+এই উপাত্তগুলো জমা (Store) করতে চলক (Variable)  ব্যবহৃত হয় ।
+
+## একটি চলক: কেন, কিভাবে
+
+একটি [চলক](https://en.wikipedia.org/wiki/Variable_(computer_science)) হল উপাত্তের জন্য "নাম দেয়া স্টোরেজ" । আমরা চলক (Variables) ব্যাবহার করে 
+
+is a "named storage" for data. We can use variables to store goodies, visitors, and other data.
 
 To create a variable in JavaScript, use the `let` keyword.
 
@@ -104,7 +108,7 @@ For instance, the variable `message` can be imagined as a box labeled `"message"
 We can put any value in the box.
 
 We can also change it as many times as we want:
-```js run
+​```js run
 let message;
 
 message = 'Hello!';
@@ -185,7 +189,7 @@ Variables named `apple` and `AppLE` are two different variables.
 ````smart header="Non-Latin letters are allowed, but not recommended"
 It is possible to use any language, including cyrillic letters or even hieroglyphs, like this:
 
-```js
+​```js
 let имя = '...';
 let 我 = '...';
 ```
@@ -193,24 +197,24 @@ let 我 = '...';
 Technically, there is no error here, such names are allowed, but there is an international tradition to use English in variable names. Even if we're writing a small script, it may have a long life ahead. People from other countries may need to read it some time.
 ````
 
-````warn header="Reserved names"
+​````warn header="Reserved names"
 There is a [list of reserved words](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords), which cannot be used as variable names because they are used by the language itself.
 
 For example: `let`, `class`, `return`, and `function` are reserved.
 
 The code below gives a syntax error:
 
-```js run no-beautify
+​```js run no-beautify
 let let = 5; // can't name a variable "let", error!
 let return = 5; // also can't name it "return", error!
 ```
 ````
 
-````warn header="An assignment without `use strict`"
+​````warn header="An assignment without `use strict`"
 
 Normally, we need to define a variable before using it. But in the old times, it was technically possible to create a variable by a mere assignment of the value without using `let`. This still works now if we don't put `use strict` in our scripts to maintain compatibility with old scripts.
 
-```js run no-strict
+​```js run no-strict
 // note: no "use strict" in this example
 
 num = 5; // the variable "num" is created if it didn't exist
@@ -233,7 +237,7 @@ num = 5; // error: num is not defined
 
 To declare a constant (unchanging) variable, use `const` instead of `let`:
 
-```js
+​```js
 const myBirthday = '18.04.1982';
 ```
 
