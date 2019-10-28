@@ -10,91 +10,93 @@
 
 ## একটি চলক: কেন, কিভাবে
 
-একটি [চলক](https://en.wikipedia.org/wiki/Variable_(computer_science)) হল উপাত্তের জন্য "নাম দেয়া স্টোরেজ" । আমরা চলক (Variables) ব্যাবহার করে 
+একটি [চলক](https://en.wikipedia.org/wiki/Variable_(computer_science)) হল উপাত্তের জন্য "নাম দেয়া স্টোরেজ" । আমরা চলক (Variables) ব্যাবহার করে জিনিসপত্র, ক্রেতা, এবং অন্য কোন উপাত্ত সংরক্ষণ করে রাখতে পারি । 
 
-is a "named storage" for data. We can use variables to store goodies, visitors, and other data.
+জাভাস্ক্রিপ্টে একটি চলক তৈরি করতে, `let` কি-ওয়ার্ড‌ ব্যবহার করবে । 
 
-To create a variable in JavaScript, use the `let` keyword.
-
-The statement below creates (in other words: *declares*) a variable with the name "message":
+নিচের স্টেটমেন্ট-টি "message" নামক একটি চলক তৈরি (অন্যকথায়ঃ *declare*) করেঃ 
 
 ```js
 let message;
 ```
 
-Now, we can put some data into it by using the assignment operator `=`:
+এখন, আমরা এটিতে কিছু উপাত্ত রাখতে পারি নির্দেশক (*assignment*) অপারেটরের মাধ্যমে `=`:
 
 ```js
 let message;
 
 *!*
-message = 'Hello'; // store the string
+message = 'হ্যালো'; // অক্ষরগুলো জমা থাকছে
 */!*
 ```
 
-The string is now saved into the memory area associated with the variable. We can access it using the variable name:
+এই অক্ষরগুলো এখন মেমোরিতে চলকটির দ্বারা জমা হল । যা আমরা চলকটির নাম দ্বারা অ্যাক্সেস করতে পারিঃ 
 
 ```js run
 let message;
-message = 'Hello!';
+message = 'হ্যালো!';
 
 *!*
-alert(message); // shows the variable content
+alert(message); // চলক-এ সংরক্ষিত জিনিস প্রদর্শন করবে
 */!*
 ```
 
-To be concise, we can combine the variable declaration and assignment into a single line:
+সংক্ষেপে, আমরা চলক তৈরি এবং এসাইনমেন্ট একযোগে একটি লাইনে করতে পারিঃ 
 
 ```js run
-let message = 'Hello!'; // define the variable and assign the value
+let message = 'হ্যালো!'; // চলক তৈরি এবং এর মান নির্দেশ করা হয়েছে
 
-alert(message); // Hello!
+alert(message); // হ্যালো!!
 ```
 
 We can also declare multiple variables in one line:
 
+ এছাড়াও আমরা একটি লাইনে একাধিক চলক নির্দেশ করতে পারিঃ 
+
 ```js no-beautify
-let user = 'John', age = 25, message = 'Hello';
+let user = 'আসিফ', age = ২০, message = 'হ্যালো';
 ```
 
-That might seem shorter, but we don't recommend it. For the sake of better readability, please use a single line per variable.
+এটা হয়ত মনে হবে ছোট, কিন্তু এই পদ্ধতি আমরা উপযোগী বলে মনে করি না । দেখার সুবিধা বিবেচনায়, অনুগ্রহ করে প্রতি চলকের জন্য একটি মাত্র লাইন ব্যবহার করবে । 
 
-The multiline variant is a bit longer, but easier to read:
+একাধিক লাইনের পদ্ধতি একটু বড়, তবে পড়তে সহজঃ 
 
 ```js
-let user = 'John';
-let age = 25;
-let message = 'Hello';
+let user = 'আসিফ';
+let age = ২০;
+let message = 'হ্যালো';
 ```
 
-Some people also define multiple variables in this multiline style:
+কেউ কেউ আবার এই পদ্ধতিতে একাধিক চলক নির্দেশ করেঃ
+
 ```js no-beautify
-let user = 'John',
-  age = 25,
-  message = 'Hello';
+let user = 'আসিফ',
+  age = ২০,
+  message = 'হ্যালো';
 ```
 
 ...Or even in the "comma-first" style:
 
+...অথবা এমনকি "কমা-প্রথমে" দিয়েঃ 
+
 ```js no-beautify
-let user = 'John'
-  , age = 25
-  , message = 'Hello';
+let user = 'আসিফ'
+  , age = ২০
+  , message = 'হ্যালো';
 ```
 
-Technically, all these variants do the same thing. So, it's a matter of personal taste and aesthetics.
+টেকনিক্যালি, এই সবগুলো পদ্ধতি একই কাজ করবে । সুতরাং, এটা ব্যক্তিগত পছন্দ এবং নান্দনিকতার বেপার । 
 
-
-````smart header="`var` instead of `let`"
-In older scripts, you may also find another keyword: `var` instead of `let`:
+ ````smart header="`let` এর পরিবর্তে `var`"
+পুরানো স্ক্রিপ্টে, তুমি অন্য একটি কি-ওয়ার্ড‌ও পেতে পারঃ `let` এর পরিবর্তে `var`:
 
 ```js
-*!*var*/!* message = 'Hello';
+*!*var*/!* message = 'হ্যালো';
 ```
 
-The `var` keyword is *almost* the same as `let`. It also declares a variable, but in a slightly different, "old-school" way.
+`var` কি-ওয়ার্ড‌ হল `let` এর *প্রায়*  একই । এটিও চলক নির্দেশ করে, কিন্তু কিছুটা আলাদা, "মান্ধাতার আমলের" মত করে । 
 
-There are subtle differences between `let` and `var`, but they do not matter for us yet. We'll cover them in detail in the chapter <info:var>.
+`let` এবং `var` এর মধ্যে সূক্ষ্ম পার্থক্য আছে, কিন্তু সেগুলো এই মুহূর্তে আমাদের জন্য গুরুত্বপূর্ণ নয় । আমরা এগুলো <info:var> অধ্যায়ে বিস্তারিত আলোচনা করব । 
 ````
 
 ## A real-life analogy
