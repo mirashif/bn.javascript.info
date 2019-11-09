@@ -54,7 +54,7 @@ We can also declare multiple variables in one line:
  এছাড়াও আমরা একটি লাইনে একাধিক চলক নির্দেশ করতে পারিঃ 
 
 ```js no-beautify
-let user = 'আসিফ', age = ২০, message = 'হ্যালো';
+let user = 'আসিফ', age = 20, message = 'হ্যালো';
 ```
 
 এটা হয়ত মনে হবে ছোট, কিন্তু এই পদ্ধতি আমরা উপযোগী বলে মনে করি না । দেখার সুবিধা বিবেচনায়, অনুগ্রহ করে প্রতি চলকের জন্য একটি মাত্র লাইন ব্যবহার করবে । 
@@ -63,7 +63,7 @@ let user = 'আসিফ', age = ২০, message = 'হ্যালো';
 
 ```js
 let user = 'আসিফ';
-let age = ২০;
+let age = 20;
 let message = 'হ্যালো';
 ```
 
@@ -71,7 +71,7 @@ let message = 'হ্যালো';
 
 ```js no-beautify
 let user = 'আসিফ',
-  age = ২০,
+  age = 20,
   message = 'হ্যালো';
 ```
 
@@ -81,7 +81,7 @@ let user = 'আসিফ',
 
 ```js no-beautify
 let user = 'আসিফ'
-  , age = ২০
+  , age = 20
   , message = 'হ্যালো';
 ```
 
