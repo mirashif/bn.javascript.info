@@ -94,22 +94,23 @@ let user = 'আসিফ'
 *!*var*/!* message = 'হ্যালো';
 ```
 
-`var` কি-ওয়ার্ড‌ হল `let` এর *প্রায়*  একই । এটিও চলক নির্দেশ করে, কিন্তু কিছুটা আলাদা, "মান্ধাতার আমলের" মত করে । 
+`var` কি-ওয়ার্ড‌ হল `let` এর *প্রায়*  একই । এটিও (var) চলক নির্দেশ করে, কিন্তু কিছুটা আলাদা, "মান্ধাতার আমলের" পদ্ধতি এটিে । 
 
 `let` এবং `var` এর মধ্যে সূক্ষ্ম পার্থক্য আছে, কিন্তু সেগুলো এই মুহূর্তে আমাদের জন্য গুরুত্বপূর্ণ নয় । আমরা এগুলো <info:var> অধ্যায়ে বিস্তারিত আলোচনা করব । 
 ````
 
-## A real-life analogy
+## একটি বাস্তব জীবনের উদাহরন
 
 We can easily grasp the concept of a "variable" if we imagine it as a "box" for data, with a uniquely-named sticker on it.
+আমরা যদি এটির জন্য অনন্য-নামযুক্ত স্টিকার সহ ডেটার জন্য একটি "বাক্স" হিসাবে কল্পনা করি তবে আমরা সহজেই একটি "variable" ধারণাটি উপলব্ধি করতে পারি ।
 
-For instance, the variable `message` can be imagined as a box labeled `"message"` with the value `"Hello!"` in it:
+উদাহরণস্বরূপ, একটি চলক `message` যার মান `"Hello!"` যা একটি `"message" লেবেলযুক্ত বাক্স হিসাবে কল্পনা করা যায়:
 
 ![](variable.svg)
 
-We can put any value in the box.
+আমরা বাক্সে যেকোনো মান রাখতে পারি ।
 
-We can also change it as many times as we want:
+এছাড়াও আমরা এটি যতবার চাই পরিবর্তন করতে পারি:
 ​```js run
 let message;
 
