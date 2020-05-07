@@ -94,7 +94,7 @@ let user = 'আসিফ'
 *!*var*/!* message = 'হ্যালো';
 ```
 
-`var` কি-ওয়ার্ড‌ হল `let` এর *প্রায়*  একই । এটিও (var) চলক নির্দেশ করে, কিন্তু কিছুটা আলাদা, "মান্ধাতার আমলের" পদ্ধতি এটিে । 
+`var` কি-ওয়ার্ড‌ হল `let` এর *প্রায়*  একই । এটিও (var) চলক নির্দেশ করে, কিন্তু কিছুটা আলাদা, "মান্ধাতার আমলের" পদ্ধতি এটি । 
 
 `let` এবং `var` এর মধ্যে সূক্ষ্ম পার্থক্য আছে, কিন্তু সেগুলো এই মুহূর্তে আমাদের জন্য গুরুত্বপূর্ণ নয় । আমরা এগুলো <info:var> অধ্যায়ে বিস্তারিত আলোচনা করব । 
 ````
@@ -121,11 +121,11 @@ message = 'World!'; // value changed
 alert(message);
 ```
 
-When the value is changed, the old data is removed from the variable:
+যখন মান পরিবর্তন করা হয়, পুরানো ডেটা ভেরিয়েবল থেকে সরানো হয়:
 
 ![](variable-change.svg)
 
-We can also declare two variables and copy data from one into the other.
+আমরা দুটি ভেরিয়েবল ডিক্লেয়ার করতে পারি এবং এক থেকে অন্যটিতে ডেটা কপি করতে পারি।
 
 ```js run
 let hello = 'Hello world!';
@@ -133,11 +133,11 @@ let hello = 'Hello world!';
 let message;
 
 *!*
-// copy 'Hello world' from hello into message
+// hello থেকে 'Hello world' কপি করে message এ রাখছে
 message = hello;
 */!*
 
-// now two variables hold the same data
+// এখন দুটি ভেরিয়েবলে একই ডেটা আছে
 alert(hello); // Hello world!
 alert(message); // Hello world!
 ```
